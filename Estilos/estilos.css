@@ -425,16 +425,18 @@ ul {
     height: 3px;
   }
 
-  .nav__responsive__menu {
-    display: block;
-    transform: scale(0, 0);
-    transition: all 300ms ease-in-out;
-  }
-
+  
   .nav__responsive__boton:checked ~ .nav__responsive__menu {
     display: block;
     transform: scale(1, 1);
   }
+  
+  .nav__responsive__menu {
+    display: block;
+    transform: scale(0, 0);
+    transition: transform 300ms ease;
+  }
+
 
   .nav__responsive__menu ul li a:hover {
     color: #5abd4f;
