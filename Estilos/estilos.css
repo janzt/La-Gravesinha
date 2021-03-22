@@ -200,10 +200,7 @@ ul {
 .nav__responsive__boton__label::after {
   top: 1rem;
 }
-.nav__responsive__boton:checked ~ .nav__responsive__menu {
-  display: none;
-  transform: scale(0, 0);
-}
+
 /* =========MENU RESPONSIVE======== */
 
 .nav__responsive__menu {
@@ -218,6 +215,12 @@ ul {
   transition: all 300ms ease-in-out;
   display: none;
 }
+
+.nav__responsive__boton:checked ~ .nav__responsive__menu {
+  display: none;
+  transform: scale(0, 0);
+}
+
 .nav__responsive__menu li {
   padding: 3rem;
   text-align: right;
