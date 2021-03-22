@@ -415,8 +415,9 @@ CONTENIDO DE NOTICIAS FINALES
 }
 
 @media screen and (max-width: 600px) {
+
   .nav__responsive__boton:checked ~ .nav__responsive__menu {
-    top: 5.8rem;
+    top: 5.72rem;
   }
 
   .nav__responsive__boton__label {
@@ -440,7 +441,6 @@ CONTENIDO DE NOTICIAS FINALES
     padding-top: 2em;
     margin-bottom: 7em;
   }
-
  
   figcaption {
     margin: 1em auto;
