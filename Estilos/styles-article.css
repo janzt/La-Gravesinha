@@ -354,7 +354,8 @@ CONTENIDO DE NOTICIAS FINALES
 
   .nav__responsive__boton__label {
     height: 4rem;
-    margin-right: 1em;
+    padding-right: 2em;
+    margin:0;
     top: 0.5em;
   }
 
@@ -367,14 +368,14 @@ CONTENIDO DE NOTICIAS FINALES
 
   .nav__responsive__menu {
     display: block;
-    transform: scale(1, 0);
-    transform-origin: right;
-    transition: transform 400ms ease-in-out;
+    transform: scale(0, 0);
+    /* transform-origin: right; */
+    transition: transform 300ms ease-in-out;
   }
 
   .nav__responsive__boton:checked ~ .nav__responsive__menu {
     display: block;
-    top: 5.2rem;
+    top: 5.8rem;
     transform: scale(1, 1);
   }
 
@@ -414,7 +415,7 @@ CONTENIDO DE NOTICIAS FINALES
 
 @media screen and (max-width: 600px) {
   .nav__responsive__boton:checked ~ .nav__responsive__menu {
-    top: 5rem;
+    top: 5.8rem;
   }
 
   .nav__responsive__boton__label {
