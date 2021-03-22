@@ -52,7 +52,6 @@ ul {
 .nav-main {
   display: flex;
   justify-content: space-between;
-  padding: 0 3em;
   align-items: center;
   background: linear-gradient(to right, #080808, #5abd4f, #080808);
 }
@@ -60,7 +59,7 @@ ul {
 .nav-brand {
   height: 50px;
   width: 50px;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 /* === NAV - TITLE == */
@@ -87,7 +86,7 @@ ul {
 
 .nav-menu-right {
   display: flex;
-  margin-right: 1em;
+  margin-right: 3em;
   padding: 0.5em 0;
 }
 
@@ -432,7 +431,7 @@ ul {
 
   .nav__responsive__boton:checked ~ .nav__responsive__menu {
     display: block;
-    top: 5.2rem;
+    top: 4.8rem;
     transform: scale(1, 1);
   }
 
@@ -484,13 +483,12 @@ ul {
 @media screen and (max-width: 600px) {
 
   .nav__responsive__boton:checked ~ .nav__responsive__menu  {
-      top:4rem;
-      
+      top:4.5rem;
   }
   
   .nav__responsive__boton__label {
     height: 4rem;
-    padding-right: 1em;
+    padding-right: 2em;
   }
   html {
     font-size: 8px;
@@ -509,7 +507,7 @@ ul {
   }
 
   .showcase {
-    margin-top: 2.9em;
+    margin-top: 2.6em;
   }
 
   .showcase,
