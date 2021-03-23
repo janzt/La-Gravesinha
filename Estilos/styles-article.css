@@ -11,6 +11,7 @@
 html {
   font-size: 10px;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background: #f5f5f5;
@@ -23,11 +24,6 @@ img {
   object-fit: cover;
   object-position: top center;
   width: 100%;
-}
-
-h3 {
-  color: #141414;
-  font-size: 2.7rem;
 }
 
 a {
@@ -45,7 +41,7 @@ ul {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/*========== NAVEGATION=================*/
+/*========== NAVEGATION =================*/
 
 .contenedor_nav {
   position: fixed;
@@ -55,7 +51,6 @@ ul {
 }
 .nav-main {
   display: flex;
-  font-size: 1.7rem;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #080808, #5abd4f, #080808);
@@ -64,7 +59,7 @@ ul {
 .nav-brand {
   height: 50px;
   width: 50px;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 /* === NAV - TITLE == */
@@ -73,15 +68,14 @@ ul {
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.8);
-  padding: 0.8em 5em 0.6em 0.5em;
-  height: auto;
+  padding: 0.8em 10em 0.5em 0;
   background: #000;
   clip-path: polygon(0 0, 84% 0, 100% 100%, 0 100%);
 }
 
 .title {
   margin-left: 0.7em;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-style: italic;
@@ -92,7 +86,7 @@ ul {
 
 .nav-menu-right {
   display: flex;
-  margin-right: 1em;
+  margin-right: 3em;
   padding: 0.5em 0;
 }
 
@@ -107,8 +101,10 @@ ul {
 }
 
 .nav-menu-right a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-btn {
@@ -120,7 +116,6 @@ ul {
   font-size: 3.5rem;
   display: none;
 }
-
 /* ===============NAVEGACION MAQUINA DEL TIEMPO -=============== */
 
 .nav__timemachine {
@@ -247,6 +242,10 @@ ul {
   padding-top: 8em;
 }
 
+.main-article h3 {
+  font-size: 2.7rem;
+}
+
 h3,
 .title-container,
 .parrafo1 {
@@ -313,8 +312,10 @@ CONTENIDO DE NOTICIAS FINALES
 .contenedor__noticias-flex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: 0 auto;
   gap: 2.5rem;
-  padding: 4em 2em;
+  padding: 4em 0;
 }
 .contenedor__noticias-flex img {
   max-height: 25rem;
@@ -322,6 +323,7 @@ CONTENIDO DE NOTICIAS FINALES
 }
 .contenedor__noticias-flex h3 {
   font-size: 2.6rem;
+  color: #131313;
   margin: 1rem 0;
   text-transform: none;
 }
@@ -333,18 +335,65 @@ CONTENIDO DE NOTICIAS FINALES
  FOOTER
   ========================= */
 
-.footer {
-  background: #2f3640;
-  color: #616161;
-  font-size: 1.2rem;
-  padding: 10em 0;
-  text-align: center;
-}
-.copyright {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.7rem;
-  margin: 0 auto;
-}
+  .footer-links {
+    background: #2e312e;
+    padding: 8em 0;
+  }
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 12em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .footer-links-title {
+    font-size: 2rem;
+    color: #5abd4f;
+    margin:0 0 1em;
+    position: relative;
+    letter-spacing: 1px;
+  }
+  
+  .footer-links-title:before {
+    content: "";
+    position: absolute;
+    bottom: -.1em;
+    height: 3px;
+    width:45px;
+    background-color: #5abd4f;
+  }
+  
+  .footer-links-information,
+  .footer-links-container li i,
+  .footer-links-container a,
+  .footer {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer-links-information,
+  .footer-links-container a{
+    font-size: 1.7rem;
+  }
+  
+  .footer-links-container li i {
+    display: inline-block;
+    padding-right: 1em;
+  }
+  
+  .footer-links-container a {
+    display: inline-block;
+    padding-bottom: 0.8em;
+  }
+  
+  .footer {
+    background: #2e312e;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+
 
 /* ================
    MEDIA QUERIES 
@@ -412,6 +461,11 @@ CONTENIDO DE NOTICIAS FINALES
   .contenedor__noticias-flex {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-links-container {
+    grid-template-columns: repeat(1, auto);
+    gap: 4em;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -465,5 +519,10 @@ CONTENIDO DE NOTICIAS FINALES
     grid-template-columns: repeat(1, 1fr);
     gap: 2.5rem;
     padding: 4em 2em;
+  }
+
+  .footer-links-container {
+    width: 85%;
+    text-align: center;
   }
 }
