@@ -26,6 +26,16 @@ a {
   color: #f5f5f5;
   text-decoration: none;
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent ;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 ul {
