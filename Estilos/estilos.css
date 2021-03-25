@@ -205,8 +205,12 @@ ul {
   background-image: url(https://th.bing.com/th/id/R3a194d6dc2e5e56454c1b9c24a55ba19?rik=cZNDgpoXER5nEw&pid=ImgRaw);
 }
 
-.bg-anti {
+.bg-antibio {
   background-image: url(https://images.unsplash.com/photo-1521731978332-9e9e714bdd20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80);
+}
+
+.bg-anti-croni {
+  background-image: url(https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
 }
 
 /* ================================
@@ -305,6 +309,56 @@ ul {
   font-size: 1.8rem;
   color: #8c8c8c;
   line-height: 2.4rem;
+}
+
+/* ========================
+   CONTENIDO PRINCIPAL ANTIBIOGRAFIA
+   ======================== */
+ .anti-principal {
+   width: 90%;
+   margin: 5em auto 8em;
+   gap:2em;
+ }
+
+ .anti-container {
+  position: relative;
+  min-height: 220px;
+  max-height: 220px ;
+ }
+
+ .anti-title {
+   display: inline-block;
+   position: absolute;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   left:0;
+   bottom:0;
+   font-size: 2.5rem;
+   letter-spacing: 1px;
+   font-weight: 600;
+   padding: .5em 1em;
+ }
+
+/* ================= */
+   /* Barra index  */
+/* ================= */
+
+.barra-nav-flex {
+  display: flex;
+  justify-content: center;
+  padding: 4em 0 0;
+  margin-bottom: 8em;
+}
+
+.barra-nav-li {
+  margin: 0 .5em ;
+}
+
+.barra-nav-index {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  padding: .3em .6em;
+  font-size: 1.4rem;
 }
 
 /*===============
