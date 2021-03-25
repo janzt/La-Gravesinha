@@ -48,6 +48,7 @@ ul {
   top: 0;
   z-index: 1000;
   min-width: 100%;
+  margin-bottom: 1em;
 }
 .nav-main {
   display: flex;
@@ -226,7 +227,6 @@ ul {
   min-height: 90vh;
   max-height: 100vh;
   position: relative;
-  margin-top: 3.9em;
 }
 
 .showcase_texto {
@@ -484,10 +484,6 @@ ul {
     width: 35px;
   }
 
-  .showcase {
-    margin-top: 3em;
-  }
-
   .showcase_texto h2 {
     font-size: 5rem;
   }
@@ -534,15 +530,14 @@ ul {
     padding: 0.6em 6em 0.6em 1.5em;
   }
 
-  .showcase {
-    margin-top: 2.6em;
-  }
-
   .showcase,
   .showcase_texto {
     margin-bottom: 2em;
   }
 
+  .showcase_texto {
+    margin-bottom: 7em;
+  }
   .showcase_texto h2,
   .showcase_texto p {
     width: 95%;
@@ -550,7 +545,7 @@ ul {
 
   .showcase_texto h2 {
     font-size: 4rem;
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
   }
 
   .contenido-principal-titular-h3 {
