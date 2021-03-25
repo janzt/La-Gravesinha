@@ -1,9 +1,15 @@
+//===============
+//Despliegue de menú responsive en media queries
+//===============================================
 
-document.querySelector('.menu-btn').addEventListener('click',() =>{
-     document.querySelector('.nav-menu-right').classList.toggle('show');
-});
+let button = document.querySelector(".btn-responsive");
+let blackMenu = document.querySelector(".nav__responsive__menu");
 
-// ScrollReveal().reveal('.showcase');
-ScrollReveal().reveal('.contenido-principal', { delay:500});
-ScrollReveal().reveal('.banner-one', { delay:500});
-ScrollReveal().reveal('.banner-two', { delay:500});
+function despliegue() {
+  if (blackMenu.style.display === "none") {
+    blackMenu.style.display = "block";
+  } else {
+    blackMenu.style.display = "none";
+  }
+}
+button.addEventListener("click", despliegue);
