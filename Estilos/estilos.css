@@ -29,10 +29,7 @@ a {
   -webkit-tap-highlight-color: transparent ;
 }
 
-i {
-  -webkit-tap-highlight-color: transparent ;
-}
-
+i,
 .noSelect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
