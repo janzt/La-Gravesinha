@@ -13,3 +13,20 @@ function despliegue() {
   }
 }
 button.addEventListener("click", despliegue);
+
+// ============================================
+// menú la máquina del tiempo 
+// =============================================
+
+let laMaquinaDelTiempo = document.querySelector(".nav__timemachine");
+let MenuMaquinaDelTiempo = document.querySelector(".nav__timemachine__nav");
+
+const maquinaDelTiempoDespliegue = () => {
+  if(MenuMaquinaDelTiempo.style.display === "none") {
+    MenuMaquinaDelTiempo.style.display = "block";
+  } else {
+    MenuMaquinaDelTiempo.style.display = "none";
+  }
+}
+
+laMaquinaDelTiempo.addEventListener("click", maquinaDelTiempoDespliegue);

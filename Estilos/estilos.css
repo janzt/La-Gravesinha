@@ -136,9 +136,6 @@ ul {
   position: relative;
   color: #f5f5f5;
 }
-.nav__timemachine__boton {
-  display: none;
-}
 .nav__timemachine__nav {
   position: absolute;
   top: 4.5rem;
@@ -159,9 +156,6 @@ ul {
 }
 .nav__timemachine__nav a:hover {
   color: #5abd4f;
-}
-.nav__timemachine__boton:checked ~ .nav__timemachine__nav {
-  display: block;
 }
 
 /* ===========BTN RESPONSIVE=========== */
@@ -211,6 +205,9 @@ ul {
   font-size: 1.7rem;
   text-transform: uppercase;
 }
+.nav__responsive__menu li a:hover {
+  color:#5abd4f;
+}  
 
 /*============= SHOWCASE BACKGROUNDS================*/
 
@@ -371,6 +368,12 @@ ul {
   border-radius: 2px;
   padding: .3em .6em;
   font-size: 1.4rem;
+}
+
+.index-active {
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.9);
 }
 
 /*===============
